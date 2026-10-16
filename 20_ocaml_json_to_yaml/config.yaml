@@ -1,0 +1,49 @@
+service: notes-api
+version: "1.10"
+port: 8080
+ratio: -0.75
+big: 1.5e+10
+small: 2.0e-3
+debug: false
+owner: null
+description: "Сервис заметок: хранение и поиск"
+motd: |
+  Добро пожаловать!
+  Сервис работает 24/7.
+unicode: Привет 🚀
+tricky:
+  - "yes"
+  - "123"
+  - "a: b"
+  - "#tag"
+  - ""
+  - " отступ"
+  - C:\Temp
+  - say "hi"
+  - "null"
+  - "-dash"
+database:
+  host: db.local
+  replicas:
+    - db1
+    - db2
+  pool:
+    min: 2
+    max: 20
+  options: {}
+users:
+  - name: Анна
+    roles:
+      - admin
+      - dev
+    active: true
+  - name: Борис
+    roles: []
+    manager:
+      name: Анна
+matrix:
+  - - 1
+    - 2
+  - - 3
+    - 4
+  - []
