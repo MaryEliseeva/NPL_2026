@@ -1,0 +1,44 @@
+{
+  "name": "Демо-сервис \"Заметки\"",
+  "version": 1.4,
+  "debug": true,
+  "owner": null,
+  "motto": "Пишем быстро и без багов",
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8080,
+    "tls": false,
+    "timeouts": {
+      "read": 30,
+      "write": 15.5
+    }
+  },
+  "tags": [
+    "web",
+    "api, v2",
+    42,
+    true
+  ],
+  "admins": [
+    "anna@example.com",
+    "boris@example.com"
+  ],
+  "limits": {
+    "rps": 100,
+    "burst": 250
+  },
+  "user": [
+    {
+      "name": "Анна",
+      "role": "admin"
+    },
+    {
+      "name": "Борис",
+      "role": "guest",
+      "groups": [
+        "dev",
+        "ops"
+      ]
+    }
+  ]
+}
